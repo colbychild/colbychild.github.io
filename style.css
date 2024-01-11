@@ -32,10 +32,9 @@
         }
 
         h2 {
-            font-weight: 200;
+            font-weight: 300;
             color: #000000;
             font-size: 3em;
-            letter-spacing: 0.04em;
         }
 
         h3 {
@@ -46,8 +45,14 @@
         }
 
         b1 {
-            font-weight: 100;
-            font-size: 1em;
+            font-weight: 200;
+            font-size: 1.3em;
+            line-height: 1.8;
+        }
+
+        p {
+            font-weight: 200;
+            line-height: 1.8;
         }
 
         nav {
@@ -85,12 +90,11 @@
         }
 
         section {
-            max-width: 1000px;
+            max-width: 1300px;
             margin: 0 auto;
             padding: 2em;
             background-color: #fff;
             margin-top: 200px;
-            border-radius: 6px;
             line-height: 1.5;
             position: relative;
         }
@@ -116,7 +120,7 @@
         }
 
         section#about .about-text {
-            max-width: 40%; /* Adjust the width of the text container as needed */
+            max-width: 50%; /* Adjust the width of the text container as needed */
         }
 
         section#about .about-text h2 {
@@ -126,6 +130,21 @@
         section#about .about-text p {
             margin: 0;
             font-size: 1em;
+        }
+
+        section#skills {
+            background-color: #3c3c3c !important;
+            max-width: 100%;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        }
+
+        section#skills img {
+            max-width: 1000px;
+            align-content: center;
+        }
+
+        section#skills h2 {
+            color: #fff;
         }
 
         #scrollToTopBtn {
