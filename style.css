@@ -97,7 +97,6 @@
             max-width: 100%;
             height: auto;
             display: block;
-            border-radius: 50%;
         }
 
         section#about {
@@ -133,51 +132,6 @@
             padding-left: 20px;
         }
 
-        .timeline:before {
-            content: '';
-            position: absolute;
-            left: 10px;
-            top: 0;
-            width: 4px;
-            height: 100%;
-            background-color: #007bff;
-        }
-
-        .event {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        .event::before {
-            content: '\2022';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            font-size: 1.5em;
-            color: #007bff;
-            transform: translateY(-50%);
-        }
-
-        .event h3 {
-            margin: 0 0 5px;
-            font-size: 1.2em;
-        }
-
-        .event p {
-            margin: 0;
-            font-size: 1em;
-            font-weight: 100;
-        }
-
-        .connector {
-            position: absolute;
-            left: 10px;
-            top: 0;
-            width: 4px;
-            height: 100%;
-            background-color: #007bff;
-            z-index: -1;
         }
         #scrollToTopBtn {
             position: fixed;
