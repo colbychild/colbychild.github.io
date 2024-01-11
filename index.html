@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <title>Colby Child - Geospatial Professional</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Colby Child </h1> 
+            <h3>GIS Specialist</h3>
+        </div>
+    </header>
+
+    <nav>
+        <a class="scroll-link" href="#about">About</a>
+        <a class="scroll-link" href="#skills">Skills</a>
+        <a class="scroll-link" href="#portfolio">Portfolio</a>
+        <a class="scroll-link" href="#resume">Resume</a>
+        <a href="https://colbychild.myportfolio.com" id="photography" target="_blank">Photography</a>
+    </nav>
+
+    <section id="about">
+        <img src="Images/Portrait.jpg" alt="About Me Image">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Colby recently graduated from the University of Utah with a degree in Geography focused on human-environment interaction and a degree in Philosophy of Science focused on environmental science. After graduation, he spent three months traveling in Brazil and Colombia. 
+            During his undergraduate career, he wrote for, and then later became the editor-in-chief of an outdoor themed publication called Wasatch Magazine. The magazine produces six print editions per year that are distributed around Salt Lake and Summit counties. It also publishes content online. While a writer, he gained valuable real-world experience in journalism. During his time as editor, he emphasized high quality photography and well-researched writing that comes together to form an interesting and unique creative product. He learned what it takes to manage a large staff and exercise editorial oversight.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <img src="Portfolio_CoverImage.jpg" alt="Skills Image">
+        <b1>Quisque porta. Vestibulum vitae.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <img src="Portfolio_CoverImage.jpg" alt="Portfolio Image">
+        <b1>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+        <div class="gallery" id="imageGallery"></div>
+        <div class="modal" id="fullscreenModal">
+            <span class="close-btn" onclick="closeFullscreen()">×</span>
+            <img id="fullscreenImage">
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="timeline">
+            <div class="connector"></div>
+            <div class="event">
+                <h3>Senior Geospatial Analyst</h3>
+                <p class="date">January 2022 - Present</p>
+                <b1>Responsible for leading geospatial analysis projects, managing a team of analysts, and providing expertise in GIS solutions.</p>
+            </div>
+            <div class="connector" style="top: 50%;"></div>
+            <div class="event">
+                <h3>Geospatial Analyst</h3>
+                <p class="date">June 2018 - December 2021</p>
+                <b1>Contributed to spatial data analysis, map production, and remote sensing projects. Collaborated with cross-functional teams to deliver accurate and timely results.</p>
+            </div>
+            <div class="connector" style="top: 50%;"></div>
+            <div class="event">
+                <h3>GIS Intern</h3>
+                <p class="date">May 2017 - August 2017</p>
+                <b1>Assisted in various GIS tasks, including data collection, map creation, and spatial analysis. Gained hands-on experience in a professional geospatial environment.</p>
+            </div>
+            <div class="connector"></div>
+        </div>
+    </section>
+    
+    <div id="scrollToTopBtn" onclick="scrollToTop()">
+        <div class="arrow-up"></div>
+        <span>Back to Top</span>
+    </div>
+    <footer>
+        <p>"Cool quote about nature"</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
+

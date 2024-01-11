@@ -1,0 +1,213 @@
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            line-height: 1;
+        }
+
+        header {
+            background: url('Images/Header-2.jpg') center/cover;
+            color: #000;
+            text-align: center;
+            padding: 4em 0;
+            height: 150px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            margin-top: 2%;
+        }
+
+        .header-container {
+            background-color: #ffffff00;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-weight: 800;
+            color: #000;
+            font-size: 4em;
+        }
+
+        h2 {
+            font-weight: 200;
+            color: #000000;
+            font-size: 3em;
+        }
+
+        h3 {
+            font-weight: 200;
+            color: #f1f1f1;
+            font-size: 2em;
+        }
+
+        b1 {
+            font-weight: 100;
+            font-size: 1em;
+        }
+
+        nav {
+            background-color: #3c3c3c;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%; /* Set the width for the vertical menu */
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #bfbfbf;
+            font-weight: 100;
+            font-size: 1em;
+            padding: 0.5em 1em;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #6b6b6b;
+            color: #fff;
+        }
+
+        nav a.active {
+            background-color: #65656556;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            margin-top: 200px;
+            border-radius: 6px;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+        }
+
+        section#about {
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+
+        section#about img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            top: 0;
+        }
+
+        section#about .about-text {
+            max-width: 40%; /* Adjust the width of the text container as needed */
+        }
+
+        section#about .about-text h2 {
+            background-color: #fff;
+        }
+
+        section#about .about-text p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #007bff;
+        }
+
+        .event {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .event::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            font-size: 1.5em;
+            color: #007bff;
+            transform: translateY(-50%);
+        }
+
+        .event h3 {
+            margin: 0 0 5px;
+            font-size: 1.2em;
+        }
+
+        .event p {
+            margin: 0;
+            font-size: 1em;
+            font-weight: 100;
+        }
+
+        .connector {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #007bff;
+            z-index: -1;
+        }
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #scrollToTopBtn .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #000000; /* Change this to your desired arrow color */
+        }
+        #scrollToTopBtn span {
+            display: block;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: #333; /* Set your footer background color */
+            color: #fff; /* Set your footer text color */
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            margin-top: 600px;
+            width: 100%;
+        }
