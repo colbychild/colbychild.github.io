@@ -126,13 +126,6 @@
             font-size: 1em;
         }
 
-        .timeline {
-            position: relative;
-            margin-top: 30px;
-            padding-left: 20px;
-        }
-
-        }
         #scrollToTopBtn {
             position: fixed;
             bottom: 20px;
