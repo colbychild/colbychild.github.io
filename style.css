@@ -146,30 +146,7 @@
         section#skills h2 {
             color: #fff;
         }
-
-        #scrollToTopBtn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 10px;
-            cursor: pointer;
-            display: none;
-        }
-
-        #scrollToTopBtn .arrow-up {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 20px solid #000000; /* Change this to your desired arrow color */
-        }
-        #scrollToTopBtn span {
-            display: block;
-            font-size: 12px;
-            margin-top: 5px;
-        }
+        
         footer {
             background-color: #333; /* Set your footer background color */
             color: #fff; /* Set your footer text color */
@@ -178,4 +155,23 @@
             position: relative;
             margin-top: 600px;
             width: 100%;
+        }
+
+        #scrollToTopBtn {
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #fa-solid {
+            background-color: #4285f4;
+            color: #fff;
+        }
+        
+        #scrollToTopBtn-text {
+            color: #ffffff;
+            margin-top: 15px;
         }
