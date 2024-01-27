@@ -56,6 +56,7 @@ p {
 li {
     list-style-type: circle;
     text-indent: 30px;
+    font-weight: 300;
 }
 
 /* Navigation Styles */
@@ -104,6 +105,7 @@ section {
 }
 
 section#about {
+    max-width: 1100px;
     width: 80%;
     display: flex;
     align-items: center;
@@ -131,9 +133,17 @@ section#about h2 {
     background-color: #fff;
 }
 
+section#about h3 {
+    font-size: 2em;
+}
+
 section#about p {
     margin: 0;
     font-size: 1em;
+}
+
+section#about .resume {
+    border-radius: 5px;
 }
 
 section#portfolio {
@@ -148,8 +158,10 @@ section#portfolio h2 {
 }
 
 section#portfolio h3 {
-    font-size: 1.1em;
-    color: #fff;
+    font-size: 2em;
+    max-width: 90%;
+    font-weight: 500;
+    color: #000000;
     text-align: center;
 }
 
@@ -177,6 +189,7 @@ section#portfolio a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
@@ -188,12 +201,12 @@ section#portfolio a {
 }
 
 .portfolio-item .item-info {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    background: rgba(33, 33, 33, 0.7);
+    height: 100%;
+    background: rgba(255, 255, 255, 0.303);
     padding: 3px;
     box-sizing: border-box;
     transition: opacity 0.3s ease-in-out;
@@ -201,6 +214,10 @@ section#portfolio a {
 
 .portfolio-item:hover {
     transform: scale(1.02);
+}
+
+.portfolio-item:hover .item-info {
+    background-color: #ffffff68
 }
 
 /* Footer Styles */

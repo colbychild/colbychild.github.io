@@ -88,13 +88,15 @@ section {
     gap: 10px;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 90%;
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    cursor: zoom-in;
+    transition: transform 0.3s ease-in-out;
 }
 
 .gallery-item img {
@@ -103,13 +105,18 @@ section {
     display: block;
 }
 
+.gallery-item:hover {
+    transform: scale(1.02)
+}
+
+/* Overlay styles
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5)
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +132,7 @@ section {
     text-align: center;
     color: #fff;
 }
+*/
 
 /* Footer Styles */
 footer {
@@ -134,7 +142,7 @@ footer {
     padding: 50px 0;
     position: relative;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
   }
   
   /* Scroll to Top Button Styles */
