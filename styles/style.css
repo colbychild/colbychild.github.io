@@ -1,183 +1,242 @@
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 
+/* Header Styles */
+header {
+    background: url('/images/header-1.jpg') center/cover;
+    background-position: center center;
+    color: #000;
+    text-align: center;
+    height: 15em;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    padding: 20px 0 150px 0;
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 14pt;
-            background-color: #fff;
-            color: #000;
-            margin: 0;
-            padding: 0;
-            display: block;
-        }
+.header-container {
+    background-color: #ffffff00;
+    padding: 0 10px;
+    display: inline-block;
+}
 
-        header {
-            background: url('header-1.jpg');
-            background-position: center center;
-            color: #000;
-            text-align: center;
-            height: 15em;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-            padding: 20px 0 150px 0;
-        }
+h1 {
+    font-weight: 800;
+    color: #000;
+    font-size: 4em;
+}
 
-        .header-container {
-            background-color: #ffffff00;
-            padding-left: 10px;
-            padding-right: 10px;
-            display: inline-block;
-        }
+h2 {
+    font-weight: 300;
+    color: #000;
+    font-size: 3em;
+}
 
-        h1 {
-            font-weight: 800;
-            color: #000;
-            font-size: 4em;
-        }
+h3 {
+    font-weight: 300;
+    color: #000000;
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
+}
 
-        h2 {
-            font-weight: 300;
-            color: #000000;
-            font-size: 3em;
-        }
+p {
+    font-weight: 300;
+    font-size: 1em;
+    color: #000000;
+    text-align: left;
+    margin-top: 10px;
+  }  
 
-        h3 {
-            font-weight: 200;
-            color: #f1f1f1;
-            font-size: 2em;
-            letter-spacing: 0.04em;
-        }
+/* Navigation Styles */
+nav {
+    background-color: #3c3c3c;
+    color: #fff;
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 10px 0;
+}
 
-        b1 {
-            font-weight: 300;
-            font-size: 1.2em;
-            line-height: 1.8;
-            font-family: 'Open Sans', sans-serif !important;
-        }
+nav a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-weight: 100;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
 
-        p {
-            font-weight: 200;
-            line-height: 1.8;
-        }
+nav a:hover {
+    background-color: #6b6b6b;
+    color: #fff;
+}
 
-        nav {
-            background-color: #3c3c3c;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            position: -webkit-sticky;
-            width: 100%; /* Set the width for the vertical menu */
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-            margin: 0;
-            
-        }
+nav a.active {
+    background-color: #65656556;
+    color: #ffffff;
+    font-weight: bold;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #bfbfbf;
-            font-weight: 100;
-            font-size: 1.2em;
-            padding: 0.5em 1em;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
+/* Section Styles */
+section {
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    margin-top: 200px;
+    line-height: 1.5;
+    position: relative;
+}
 
-        nav a:hover {
-            background-color: #6b6b6b;
-            color: #fff;
-        }
+section#about {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
-        nav a.active {
-            background-color: #65656556;
-            color: #ffffff;
-            font-weight: bold;
-        }
+section#about .columnLeft {
+    display: block
+}
 
-        section {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 2em;
-            background-color: #fff;
-            margin-top: 200px;
-            line-height: 1.5;
-            position: relative;
-        }
+section#about img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    top: 0;
+}
 
-        section img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        section#about {
-            display: flex;
-            align-items:center;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
+section#about .columnRight {
+    max-width: 55%;
+}
 
-        section#about img {
-            max-width: 40%;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            top: 0;
-        }
+section#about .about-text h2 {
+    background-color: #fff;
+}
 
-        section#about .about-text {
-            max-width: 50%; /* Adjust the width of the text container as needed */
-        }
+section#about .about-text p {
+    margin: 0;
+    font-size: 1em;
+}
 
-        section#about .about-text h2 {
-            background-color: #fff;
-        }
+section#portfolio {
+    background-color: #4d4d4d;
+    max-width: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
 
-        section#about .about-text p {
-            margin: 0;
-            font-size: 1em;
-        }
+section#portfolio h2 {
+    color: #fff;
+    text-align: center;
+}
 
-        section#skills {
-            background-color: #3c3c3c !important;
-            max-width: 100%;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-        }
+section#portfolio h3 {
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+}
 
-        section#skills img {
-            max-width: 1000px;
-            align-content: center;
-        }
+section#portfolio p {
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
 
-        section#skills h2 {
-            color: #fff;
-        }
-        
-        footer {
-            background-color: #333; /* Set your footer background color */
-            color: #fff; /* Set your footer text color */
-            text-align: center;
-            padding: 50px;
-            position: relative;
-            margin-top: 600px;
-            width: 100%;
-        }
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-        #scrollToTopBtn {
-            position: relative;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #fa-solid {
-            background-color: #4285f4;
-            color: #fff;
-        }
-        
-        #scrollToTopBtn-text {
-            color: #ffffff;
-            margin-top: 15px;
-        }
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-item .item-info {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(33, 33, 33, 0.7);
+    padding: 3px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+  }
+  
+  /* Scroll to Top Button Styles */
+  #scrollToTopBtn {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  #fa-solid {
+    background-color: #4285f4;
+    color: #fff;
+  }
+  
+  #scrollToTopBtn-text {
+    color: #ffffff;
+    margin-left: 15px;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    color: #ffffff;
+    font-weight: 300;
+    position: center;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 2% 35% 0% 35%;
+  }

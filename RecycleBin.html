@@ -16,3 +16,28 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 @media only screen and (min-width: 1025px) {
     /* Your desktop styles go here */
 }
+
+
+// Show/hide the Scroll to Top button based on scroll position
+window.addEventListener('scroll', function () {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+// Alternative to current smooth scroll script
+// Add smooth scrolling to all links
+$('a').on('click', function(event) {
+	if (this.hash !== '') {
+		event.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 800, function(){
+			window.location.hash = hash;
+		});
+	}
+});

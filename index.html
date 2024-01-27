@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles/style.css">
+    
+    <!--Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@300;400;500;600;700&display=swap">
     <script src="https://kit.fontawesome.com/d0a6ae3034.js" crossorigin="anonymous"></script>
     <title>Colby Child - GIS Professional</title>
 </head>
-<body>
+<body class="no-fullscreen"> <!-- Add a class to represent no fullscreen by default -->
     <!--header-->
     <header>
         <div class="header-container">
@@ -22,72 +25,146 @@
     <!-- Navigation Menu -->
     <nav>
         <a class="scroll-link" href="#about">About</a>
-        <a class="scroll-link" href="#skills">Skills</a>
         <a class="scroll-link" href="#portfolio">Portfolio</a>
         <a class="scroll-link" href="#resume">Resume</a>
         <a href="https://colbychild.myportfolio.com" id="photography" target="_blank">Photography</a>
     </nav>
 
-
-
-    <section id="about">
-        <img src="images/portrait.jpg" alt="About Me Image">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <b1>Colby recently graduated from the University of Utah with a degree in Geography focused on human-environment interaction and a degree in Philosophy of Science focused on environmental science. After graduation, he spent three months traveling in Brazil and Colombia. 
-            During his undergraduate career, he wrote for, and then later became the editor-in-chief of an outdoor themed publication called Wasatch Magazine. The magazine produces six print editions per year that are distributed around Salt Lake and Summit counties. It also publishes content online. While a writer, he gained valuable real-world experience in journalism. During his time as editor, he emphasized high quality photography and well-researched writing that comes together to form an interesting and unique creative product. He learned what it takes to manage a large staff and exercise editorial oversight.</b1>
-        </div>
-    </section>
-
-    <hr>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <img src="images/filler-2.jpg" alt="Skills Image">
-        <b1>Quisque porta. Vestibulum vitae.</b1>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <img src="images/filler-1.jpg" alt="Portfolio Image">
-        <b1>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <div class="timeline">
-            <div class="connector"></div>
-            <div class="event">
-                <h3>Senior Geospatial Analyst</h3>
-                <p class="date">January 2022 - Present</p>
-                <b1>Responsible for leading geospatial analysis projects, managing a team of analysts, and providing expertise in GIS solutions.</p>
+    <main>
+        <section id="about">
+            <div class="columnLeft">
+            <img src="images/portrait.jpg" alt="About Me Image">
+                <h2>Skills</h2>
+                <li>ArcGIS Pro</li>
+                <li>Survey123</li>
+                <li></li>
+                <li></li>
+                <li></li>
             </div>
-            <div class="connector" style="top: 50%;"></div>
-            <div class="event">
-                <h3>Geospatial Analyst</h3>
-                <p>class="date">June 2018 - December 2021</p>
-                <b1>Contributed to spatial data analysis, map production, and remote sensing projects. Collaborated with cross-functional teams to deliver accurate and timely results.</p>
+            <div class="columnRight">
+                <h2>About Me</h2>
+                <p>			
+                I am currently a GIS intern with the state of Utah's Public Lands Policy Coordinating Office. There I am growing my geospatial skillset and enjoy both technical problem solving and the artistic side of GIS including cartography and UI/UX.
+                <br><br>
+                I graduated from the University of Utah in 2022 with a degree in Geography focused on human-environment interaction and a degree in Philosophy of Science focused on environmental science. My studies bridged the divide between human and physical geography and I valued interdisciplinary collaboration. I believe that my unorthodox degree pairing gives me a unique and important skillset in a world that needs more integration of knowledge among specialties. Beyond my technical know-how in the social and physical sciences, I can think critically and communicate specialized knowledge to non-technical audiences. 
+                <br><br>
+                In my free time, I enjoy photographing landscapes and identifying plants while out hiking, camping, or skiing. 
+                </p>
+                <br>
+                <h3>Contact</h3>
+                <p>colbychild@gmail.com</p>
             </div>
-            <div class="connector" style="top: 50%;"></div>
-            <div class="event">
-                <h3>GIS Intern</h3>
-                <p>class="date">May 2017 - August 2017</p>
-                <b1>Assisted in various GIS tasks, including data collection, map creation, and spatial analysis. Gained hands-on experience in a professional geospatial environment.</p>
-            </div>
-            <div class="connector"></div>
-        </div>
-    </section>
+        </section>
 
- 
+        <section id="portfolio">
+            <h2>Project Portfolio</h2>
+            <div id="gallery-container">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <a href="/portfolio/emery-maps.html">
+                        <img src="images/emery_map/emery-3.jpg" alt="Portfolio Item 1">
+                        <div class="item-info">
+                            <h3>Emery County Print Maps</h3>
+                        </div>
+                    </a>
+                </div>                
+            
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item">
+                    <img src="images/emery_map/emery-3.jpg" alt="Portfolio Item 2">
+                    <div class="item-info">
+                        <h3>Advanced Methods in GIS</h3>
+                    </div>
+                </div>
+            
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <img src="images/emery_map/emery-3.jpg" alt="Portfolio Item 2">
+                    <div class="item-info">
+                        <h3>Advanced Methods in GIS</h3>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item">
+                    <img src="images/emery_map/emery-3.jpg" alt="Portfolio Item 2">
+                    <div class="item-info">
+                        <h3>Advanced Methods in GIS</h3>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item">
+                    <img src="images/emery_map/emery-3.jpg" alt="Portfolio Item 2">
+                    <div class="item-info">
+                        <h3>Advanced Methods in GIS</h3>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item">
+                    <img src="images/emery_map/emery-3.jpg" alt="Portfolio Item 2">
+                    <div class="item-info">
+                        <h3>Advanced Methods in GIS</h3>
+                    </div>
+                </div>
+
+                <!-- Repeat similar structure for more items -->
+            
+            </div>
+
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="timeline">
+                <div class="connector"></div>
+                <div class="event">
+                    <h3>Senior Geospatial Analyst</h3>
+                    <p class="date">January 2022 - Present</p>
+                    <b1>Responsible for leading geospatial analysis projects, managing a team of analysts, and providing expertise in GIS solutions.</p>
+                </div>
+                <div class="connector" style="top: 50%;"></div>
+                <div class="event">
+                    <h3>Geospatial Analyst</h3>
+                    <p>class="date">June 2018 - December 2021</p>
+                    <b1>Contributed to spatial data analysis, map production, and remote sensing projects. Collaborated with cross-functional teams to deliver accurate and timely results.</p>
+                </div>
+                <div class="connector" style="top: 50%;"></div>
+                <div class="event">
+                    <h3>GIS Intern</h3>
+                    <p>class="date">May 2017 - August 2017</p>
+                    <b1>Assisted in various GIS tasks, including data collection, map creation, and spatial analysis. Gained hands-on experience in a professional geospatial environment.</p>
+                </div>
+                <div class="connector"></div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div id="scrollToTopBtn" onclick="scrollToTop()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-                </svg>
+          <div class="button-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              class="bi bi-arrow-up-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+              />
+            </svg>
             <div id="scrollToTopBtn-text">Back to Top</div>
-            <p>"Cool quote about nature"</p>
-        </div>     
+          </div>
+        </div>
+        <p id="quote">"I was so busy making maps I let them argue. I figured I’d show them a picture of where the rift valley was and where it pulled apart. There’s truth in the old cliché that a picture is worth a thousand words and that seeing is believing."<br><br>– Marie Tharp
+        </p>
     </footer>
-    <script src="javascript.js"></script>
+      
+    <script src="main.js"></script>
 </body>
 </html>
