@@ -35,7 +35,7 @@ h1 {
 h2 {
     font-weight: 300;
     color: #000;
-    font-size: 3em;
+    font-size: 2.3em;
 }
 
 h3 {
@@ -51,7 +51,12 @@ p {
     color: #000000;
     text-align: left;
     margin-top: 10px;
-  }  
+  }
+
+li {
+    list-style-type: circle;
+    text-indent: 30px;
+}
 
 /* Navigation Styles */
 nav {
@@ -107,7 +112,7 @@ section#about {
 }
 
 section#about .columnLeft {
-    display: block
+    display: block;
 }
 
 section#about img {
@@ -122,11 +127,11 @@ section#about .columnRight {
     max-width: 55%;
 }
 
-section#about .about-text h2 {
+section#about h2 {
     background-color: #fff;
 }
 
-section#about .about-text p {
+section#about p {
     margin: 0;
     font-size: 1em;
 }
@@ -152,6 +157,10 @@ section#portfolio p {
     color: white;
     text-align: center;
     padding-bottom: 30px;
+}
+
+section#portfolio a {
+
 }
 
 #gallery-container {
