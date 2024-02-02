@@ -1,8 +1,3 @@
-/* Desktop styles */
-@media only screen and (min-width: 1025px) {
-    /* Your desktop styles go here */
-
-
 /* Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -73,7 +68,7 @@ nav {
     text-align: center;
     position: sticky;
     position: -webkit-sticky;
-    width: 100%;
+    width: auto;
     top: 0;
     z-index: 1000;
     margin: 0;
@@ -93,12 +88,14 @@ nav a {
 nav a:hover {
     background-color: #6b6b6b;
     color: #fff;
+    border-radius: 5px;
 }
 
 nav a.active {
     background-color: #65656556;
     color: #ffffff;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 /* Section Styles */
@@ -112,28 +109,86 @@ section {
 #about {
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     margin-top: 100px;
+    padding-top: 3.5rem;
 }
 
-.imageSkills {
-    padding: 20px;
-    width: 40%;
+#about h2 {
+    color: navy;
 }
 
-.aboutMe {
+#about h3 {
+    color: navy;
+}
+
+.imageContact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    width: 60%;
+    padding: 2rem;
+    width: 35%;
+}
+
+.contact {
+    margin-inline: auto;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.downloadResume {
+    margin-inline: auto;
+}
+
+.downloadResume button {
+    background-color: white;
+    color: black;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 10px 20px;
+    /* border: 0.5px solid #000000; */
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.223);
+}
+
+button:hover {
+    background-color: #03224ee3;
+    color: rgb(237, 237, 237);
+}
+
+
+.aboutMe {
+    padding: 2rem;
+    width: 65%;
 }
 
 #about img {
+    display: block;
     border-radius: 50%;
-    background-image: contain;
+    border: 5px solid rgba(0, 0, 0, 0.074);
     max-width: 100%;
+    margin-inline: auto;
+}
+
+@media (max-width: 700px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+    .imageContact {
+        width: 90%;
+    }
+    .aboutMe {
+        width: 90%;
+    }
+    #about img {
+        max-width: 80%;
+    }
 }
 
 #portfolio {
@@ -146,6 +201,8 @@ section {
     color: rgb(208, 156, 58);
     text-align: center;
     font-weight: 900;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
 }
 
 #portfolio h3 {
@@ -159,7 +216,7 @@ section {
 
 #gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     max-width: 90%;
     margin: 20px auto;
@@ -177,7 +234,7 @@ section {
 }
 
 .portfolio-item img {
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
     display: block;
 }
@@ -186,8 +243,8 @@ section {
     position: relative;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background: rgba(255, 255, 255, 0.056);
     padding: 3px;
     box-sizing: border-box;
@@ -202,6 +259,34 @@ section {
     background-color: #ffffff25
 }
 
+@media (max-width: 700px) {
+    #gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr 1fr));
+    }
+    .portfolio-item {
+        width: 250px;
+    }
+}
+
+/* Resume */
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.left-column {
+    padding: 1rem;
+}
+
+.right-column {
+    padding: 1rem;
+
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -209,7 +294,7 @@ footer {
     text-align: center;
     padding: 50px 0;
     position: relative;
-    width: 100%;
+    width: auto;
     margin-top: 200px;
   }
   
@@ -249,7 +334,6 @@ footer {
     margin-top: 40px;
     max-width: 700px;
   }
-}
 
 .author {
     color: #ffffff;
@@ -259,231 +343,4 @@ footer {
     margin: auto;
     margin-top: 20px;
     max-width: 700px;
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    /* Your mobile styles go here */
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 14pt;
-        background-color: #fff;
-        color: #000;
-        margin: 0
-    }
-    
-    /* Header Styles */
-    header {
-        background: url('/images/header-1.jpg') center/cover;
-        background-position: center center;
-        color: #000;
-        text-align: center;
-        height: 15em;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        padding: 20px 0 150px 0;
-    }
-    
-    .header-container {
-        background-color: #ffffff00;
-        padding: 0 10px;
-        display: inline-block;
-    }
-    
-    h1 {
-        font-weight: 800;
-        color: #000;
-        font-size: 4em;
-    }
-    
-    h2 {
-        font-weight: 300;
-        color: #000;
-        font-size: 2.3em;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    
-    h3 {
-        font-weight: 300;
-        color: #000000;
-        font-size: 1.5em;
-        letter-spacing: 0.04em;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    
-    p {
-        font-weight: 300;
-        font-size: 1em;
-        color: #000000;
-        text-align: left;
-        line-height: 1.3;
-      }
-    
-    li {
-        list-style-type: circle;
-        font-weight: 300;
-    }
-    
-    /* Navigation Styles */
-    nav {
-        background-color: #3c3c3c;
-        color: #fff;
-        text-align: center;
-        position: sticky;
-        position: -webkit-sticky;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        margin: 0;
-        padding: 10px 0;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: #bfbfbf;
-        font-weight: 100;
-        font-size: 1.2em;
-        padding: 0.5em 1em;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-    }
-    
-    nav a:hover {
-        background-color: #6b6b6b;
-        color: #fff;
-    }
-    
-    nav a.active {
-        background-color: #65656556;
-        color: #ffffff;
-        font-weight: bold;
-    }
-    
-    /* Section Styles */
-    section {
-        padding: 2em;
-        background-color: #fff;
-        margin-top: 200px;
-        position: relative;
-    }
-    
-    .about {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        max-width: 1000px;
-        margin: auto;
-        margin-top: 100px;
-        box-sizing: border-box;
-    }
-    
-    .portrait {
-        height: auto;
-    }
-    
-    .about img {
-        border-radius: 50%;
-        background-image: contain;
-        max-width: 100%;
-    }
-    
-    section#portfolio {
-        background-color: #4d4d4d;
-        max-width: 100%;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-    }
-    
-    #gallery-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-        max-width: 85%;
-        margin: 20px auto;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    
-    .portfolio-item {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .portfolio-item img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-    }
-    
-    .portfolio-item .item-info {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.303);
-        padding: 3px;
-        box-sizing: border-box;
-        transition: opacity 0.3s ease-in-out;
-    }
-    
-    .portfolio-item:hover {
-        transform: scale(1.02);
-    }
-    
-    .portfolio-item:hover .item-info {
-        background-color: #ffffff68
-    }
-    
-    /* Footer Styles */
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: left;
-        padding: 50px 0;
-        position: relative;
-        width: 100%;
-        margin-top: 200px;
-      }
-      
-      /* Scroll to Top Button Styles */
-      #scrollToTopBtn {
-        position: relative;
-        bottom: 10px;
-        right: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-      }
-      
-      #fa-solid {
-        background-color: #4285f4;
-        color: #fff;
-      }
-      
-      #scrollToTopBtn-text {
-        color: #ffffff;
-        margin-left: 15px;
-      }
-      
-      .button-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .quote {
-        color: #ffffff;
-        font-weight: 300;
-        text-align: left;
-        line-height: 1.5em;
-        margin: auto;
-      }
-
 }

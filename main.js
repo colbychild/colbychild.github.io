@@ -57,3 +57,24 @@ function scrollToTop() {
 
     requestAnimationFrame(scrollStep);
 }
+
+function downloadResume() {
+    // Specify the path to your PDF document
+    var pdfPath = '/Resume_Colby-Child'; // Update this with the actual path
+
+    // Create an anchor element
+    var link = document.createElement('a');
+    link.href = pdfPath;
+
+    // Specify the download attribute along with the desired filename
+    link.download = 'Resume_Colby-Child'; // You can change the filename if needed
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click event on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+}

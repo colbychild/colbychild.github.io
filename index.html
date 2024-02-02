@@ -33,48 +33,40 @@
     <main>
         <section id="about">
 
-            <div class="imageSkills">
-                <img src="images/portrait.jpg" alt=""></>
-                <br><br>
-                <h3>Skills</h3>
-                <hr>
-                <ul>
-                    <li>HTML/CSS/JS</li>
-                    <li>Photography & Videography</li>
-                    <li>Python</li>
-                    <li>Cartography</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <br>
-                <h3>Software</h3>
-                <hr>
-                <ul>
-                    <li>ArcGIS Pro</li>
-                    <li>ArcGIS Survey123</li>
-                    <li>ArcGIS Field Maps</li>
-                    <li>ArcGIS Experience Builder</li>
-                    <li>Adobe Lightroom</li>
-                    <li></li>
-                </ul>
+            <div class="imageContact">
+                <div class="portrait">
+                    <img src="images/portrait.jpg" alt=""></>
+                </div>
+                
+                <div class="contact">
+                    <br>
+                    <h3>Contact</h3>
+                    <hr>
+                    <p>colbychild@gmail.com</p>
+                </div>
+                
+                <div class="downloadResume">
+                    <br>
+                    <button onclick="downloadResume()">
+                        <i class="fas fa-download"></i>
+                        &nbsp;Download Resume
+                    </button>
+                </div>
+                
             </div>
+
 
             <div class="aboutMe">
                 <div>    
                     <h2>About Me</h2>
                     <hr>
                     <p>			
-                        I am currently a GIS intern with the state of Utah's Public Lands Policy Coordinating Office. There I am growing my geospatial skillset and enjoy both technical problem solving and the artistic side of GIS including cartography and UI/UX.
+                        I am currently a GIS intern with the state of Utah's Public Lands Policy Coordinating Office. There I am growing my geospatial skillset and enjoy projects that require combining technical and artistic work (cartography, UI/UX, etc...).
                         <br><br>
-                        I graduated from the University of Utah in 2022 with a degree in Geography focused on human-environment interaction and a degree in Philosophy of Science focused on environmental science. My studies bridged the divide between human and physical geography and I valued interdisciplinary collaboration. I believe that my unorthodox degree pairing gives me a unique and important skillset in a world that needs more integration of knowledge among specialties. Beyond my technical know-how in the social and physical sciences, I can think critically and communicate specialized knowledge to non-technical audiences. 
+                        I graduated from the University of Utah in 2022 with a degree in Geography focused on human-environment interaction and a degree in Philosophy of Science focused on environmental science. My studies bridged the divide between human and physical geography and I valued interdisciplinary collaboration. I believe that my unorthodox degree pairing gives me a unique and important skillset in a world that needs more integration of knowledge among specialties.
                         <br><br>
-                        In my free time, I enjoy photographing landscapes and identifying plants while out hiking, camping, or skiing. 
+                        In my free time, I enjoy photography and identifying plants while out hiking, camping, or skiing. 
                     </p>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <hr>
-                    <p>colbychild@gmail.com</p>
                 </div>
             </div>
 
@@ -82,6 +74,7 @@
         
         <section id="portfolio">
             <h2>Project Portfolio</h2>
+            <h3>Intro to projects in portfolio</h3>
             <div id="gallery-container">
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-item">
@@ -140,6 +133,258 @@
 
         </section>
 
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="resume">
+            
+            
+            <div class="left-column">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="right-column">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Utah</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Master of Science in Geographic Information Science
+                            </span> 
+                            <span class="resume-block__header-date">
+                                August 2021
+                            </span>
+                        </p>
+                    </div>
+
+                </div> <!-- end resume-block -->
+
+                
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Montana</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Geographic Information Sciences and Technologies Certificate
+                            </span> 
+                            <span class="resume-block__header-date">
+                                July 2017
+                            </span>
+                        </p>
+                    </div>
+
+
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Montana</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Bachelor of Science in Wildlife Biology
+                            </span> 
+                            <span class="resume-block__header-date">
+                                May 2015
+                            </span>
+                        </p>
+                    </div>
+
+
+
+                </div> <!-- end resume-block -->
+
+
+            </div>
+        </div> <!-- s-resume__section -->
+        
+        <div class="resume">
+            <div class="left-column">
+                <h3 class="section-header-allcaps">Work Experience</h3>
+            </div>
+            <div class="right-column">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Wyoming</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Research Scientist Associate</span> 
+                            <span class="resume-block__header-date">
+                                May 2023 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                   Develop and produce analytical workflows, technical assessments, interactive dashboards, and research to help manage and conserve big game habitat
+                        related to the wildlife management and conservation needs of USDA’s Working Lands for Wildlife Program and Wyoming Game and Fish Department.
+                        Additionaly provide analytical, data management, and research support for the Merkle Research Group, Wyoming Cooperative Fish and Wildlife Research Unit, Wyoming Migration Initiative, as well as state, federal, and NGO cooperators and partners.
+
+
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Utah Division of Wildlife Resources</h4>
+                        <p class="resume-block__header-meta">
+                            <span>GIS Developer</span> 
+                            <span class="resume-block__header-date">
+                                May 2021 - May 2023
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Support technical geospatial, data, research and application developments and products for the Wildlife Migration Initiative. Manage, analyze and visualize big data using cloud computing. Perform research analysis and complete various GIS and research-based projects using R statistical packages, ESRI products, and GCP. Build customized solutions for processing wildlife movements with R Shiny apps.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Utah Division of Wildlife Resources</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Wildlife Migration Technician</span> 
+                            <span class="resume-block__header-date">
+                               Oct 2019 - May 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Maintain, edit and ensure quality control of spatial databases of wildlife locations for the State of Utah. Create programming scripts that detect and repair problems in the data. Assist in the migration of spatial SQL database to google cloud platform and development of web applications. Map migration corridors and home ranges using Brownian Bridge Movement Model for Utah using R scripts. Prepare GIS data requests for regional staff and partners.                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Utah National Guard</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Wildlife Technician</span> 
+                            <span class="resume-block__header-date">
+                                April 2019 - Oct 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Developed relational spatial database for raptor and passerine survey. Develop web applications to streamline field data collection. Write and draft technical reports based on passerine demographics, raptor and vegetation surveys. Identify information from analyses that suggest developing patterns of problems or complaints from which general specific trends can be discerned, suggesting a need for further investigation.                                        </p>
+
+                </div> <!-- end resume-block -->
+
+                
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Idaho</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Data Technician</span> 
+                            <span class="resume-block__header-date">
+                                May 2018 - Sept 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Transcribe nesting burrowing owl behaviors. Perform literature searches on North American passerines for comparative analysis on latitudinal pattern in clutch size. Responsible for data management and entry of passerine nest data in MS Access.                    
+                    
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                           
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">City of West Jordan</h4>
+                        <p class="resume-block__header-meta">
+                            <span>GIS Internship</span> 
+                            <span class="resume-block__header-date">
+                                Sept 2018 - May 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Use a variety of geospatial tools to find, edit, digitize, geo-reference and display data using ESRI GIS software. Collaborate with management to see technical projects through from conception to completion.                    
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <p>
+                      <strong>Software/Web: </strong>  ESRI ArcGIS (ArcGIS Pro, ArcGIS 9.3-10.7, ArcGIS Online, Survey123, Experience Builder, WebApp Builder, ArcServer, Field Maps), QGIS, Leaflet, PostGIS, Mapbox, R Studio, R Shiny, Google Cloud Platform (BigQuery, AI Notebooks, Cloud Functions, Cloud Run, GeoViz, Data Studio, CloudSQL), Visual Studio,  PgAdmin, PostgreSQL, MSSQL, Netlogo, MS Access
+                    </p>
+                    <p>
+                      <strong> Programming:</strong>  SQL, R, Python, JavaScript, HTML, CSS
+                    </p>
+                    ​<p>
+                        <strong>Project Management: </strong>Trello, Asana, G Suite
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Conferences</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+
+                    <h5> <strong>UTTWS & CCTWS Annual Conference</strong></h5> 
+                    <span>Mapping Wildlife Movement in QGIS Workshop</span> 
+                    <span class="resume-block__header-date">
+                       March 2023
+                    </span>
+
+               
+                    <h5> <strong>ESRI UC</strong></h5> 
+                        <span>Improving Wildlife Management with GIS</span> 
+                        <span class="resume-block__header-date">
+                           July 2022
+                        </span>
+
+                        <h5> <strong>Utah Geographical Informational Council Annual Conference</strong></h5> 
+                        <span>Where's the Wildlife?</span> 
+                        <span class="resume-block__header-date">
+                           Oct 2021
+                        </span>
+                    
+                     
+                   
+                   
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
         <section id="resume">
             <h2>Resume</h2>
             <div class="timeline">
@@ -163,6 +408,31 @@
                 </div>
                 <div class="connector"></div>
             </div>
+            
+            <h3>Skills</h3>
+            <hr>
+            <ul>
+                <li>HTML/CSS/JS</li>
+                <li>Photography & Videography</li>
+                <li>Python</li>
+                <li>Cartography</li>
+                <li>Spatial Analysis</li>
+                <li>Field Data Collection</li>
+                <li></li>
+                <li>Data Management</li>
+            </ul>
+            <br>
+            <h3>Software</h3>
+            <hr>
+            <ul>
+                <li>ArcGIS Pro</li>
+                <li>ArcGIS Survey123</li>
+                <li>ArcGIS Field Maps</li>
+                <li>ArcGIS Experience Builder</li>
+                <li>Adobe Lightroom</li>
+                <li></li>
+            </ul>
+
         </section>
     </main>
 
