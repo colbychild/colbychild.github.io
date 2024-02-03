@@ -431,57 +431,81 @@ footer {
   }
 
   /* Scroll to Top Button Styles */
-  #scrollToTopBtn {
-    position: relative;
-    /* bottom: 10px; */
-    /* right: 10px; */
+#scrollToTopBtn {
+position: relative;
+/* bottom: 10px; */
+/* right: 10px; */
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin-top: 2rem;
+}
+
+#fa-solid {
+background-color: #4285f4;
+color: #fff;
+}
+
+#scrollToTopBtn-text {
+color: #ffffff;
+margin-left: 15px;
+}
+
+.button-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+  
+.external-sites {
     display: flex;
+    flex-flow: row wrap;
+    margin-inline: auto;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    margin-top: 5rem;
-  }
-  
-  #fa-solid {
-    background-color: #4285f4;
-    color: #fff;
-  }
-  
-  #scrollToTopBtn-text {
-    color: #ffffff;
-    margin-left: 15px;
-  }
-  
-  .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-.external {
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.external-buttons {
     text-decoration: none;
     color: white;
     padding: 1rem;
-    margin: auto 0.5rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
     border: 2px solid white;
     border-radius: 100px;
 }
 
-.external:hover {
+.external-buttons:hover {
     background-color: #fff;
     color: black;
 }
 
-  .quote {
+.linkedin {
+    background-color: white;
+    padding: 1rem;
+    margin: auto 0.5rem;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.linkedin img {
+    width: 90px;
+}
+
+.linkedin:hover {
+    background-color: rgba(0, 0, 0, 0.885);
+}
+
+.quote {
     color: #ffffff;
     font-weight: 300;
     text-align: left;
     line-height: 1.5em;
     margin: auto;
-    max-width: 500px;
-  }
+    padding: 0;
+    max-width: 625px;
+}
 
 .author {
     color: #ffffff;
@@ -489,7 +513,8 @@ footer {
     text-align: center;
     line-height: 1.5em;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
     max-width: 700px;
+    padding: 0;
 }
