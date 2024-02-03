@@ -59,14 +59,20 @@ function scrollToTop() {
 }
 
 function toggleFullscreen(element) {
-    if (!document.fullscreenElement) {
-      element.requestFullscreen().catch(err => {
-        console.error(`Error attempting to enable full-screen mode: ${err.message}`);
-      });
-    } else {
-      document.exitFullscreen();
-    }
+  if (!document.fullscreenElement) {
+    element.parentElement.classList.add('fullscreen');
+    element.requestFullscreen().catch(err => {
+      console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+    });
+  } else {
+    document.exitFullscreen();
+    element.parentElement.classList.remove('fullscreen');
   }
+}
+
+function toggleEnlarge(container) {
+  container.classList.toggle('enlarged');
+}
   
   // Listen for fullscreen change event
   document.addEventListener('fullscreenchange', () => {

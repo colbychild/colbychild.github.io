@@ -6,7 +6,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
-    display: block;
+    height: 100vh;
 }
 
 h1 {
@@ -27,6 +27,7 @@ h3 {
     color: #000000;
     font-size: 1.5em;
     letter-spacing: 0.04em;
+    text-align: center;
 }
 
 p {
@@ -83,7 +84,7 @@ section {
     position: relative;
 }
 
-#gallery-container {
+.sample-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
@@ -92,13 +93,15 @@ section {
     max-width: 90%;
 }
 
-.individualImage {
+.fullmap-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     gap: 2rem;
     padding: 20px;
     box-sizing: border-box;
     max-width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .gallery-item {
@@ -107,12 +110,13 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     cursor: zoom-in;
     transition: transform 0.3s ease-in-out;
+    height: auto;
 }
 
-.gallery-item img {
+img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: contain;
 }
 
 .gallery-item:hover {
@@ -122,6 +126,25 @@ section {
 .gallery-item h3 {
     position: relative;
 }
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+  }
+
+.fullscreen img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
 
 /* Footer Styles */
 footer {
