@@ -123,6 +123,7 @@ section {
     box-sizing: border-box;
     max-width: 60%;
     margin-top: 0.5rem;
+    max-width: 800px;
 }
 
 .gallery-item {
