@@ -60,10 +60,30 @@ function scrollToTop() {
 
 function toggleFullscreen(element) {
     if (!document.fullscreenElement) {
-        element.requestFullscreen().catch(err => {
-            console.error(`Error attempting to enable full-screen mode: ${err.message}`);
-        });
+      element.requestFullscreen().catch(err => {
+        console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+      });
     } else {
-        document.exitFullscreen();
+      document.exitFullscreen();
     }
-}
+  }
+  
+  // Listen for fullscreen change event
+  document.addEventListener('fullscreenchange', () => {
+    const fullscreenElement = document.fullscreenElement;
+    if (fullscreenElement) {
+      // Apply styles to the element in fullscreen mode
+      fullscreenElement.style.width = 'auto';
+      fullscreenElement.style.height = 'auto';
+    } else {
+      // Reset styles when exiting fullscreen
+      element.style.width = ''; // Set to default or remove this line if not needed
+      element.style.height = ''; // Set to default or remove this line if not needed
+      element.style.objectFit = ''; // Set to default or remove this line if not needed
+    }
+  });
+  
+  // Example usage:
+  // const myElement = document.getElementById('myImage'); // replace 'myImage' with your actual element ID
+  // myElement.addEventListener('click', () => toggleFullscreen(myElement));
+  
