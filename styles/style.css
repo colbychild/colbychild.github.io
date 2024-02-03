@@ -9,11 +9,11 @@ body {
 
 /* Header Styles */
 header {
-    background: url('/images/header-1.jpg') center/cover;
+    background: url('/images/misc/header-1.jpg') center/cover;
     background-position: center center;
     color: #000;
     text-align: center;
-    height: 15em;
+    height: 13em;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     padding: 20px 0 150px 0;
 }
@@ -65,7 +65,7 @@ li {
 
 /* Navigation Styles */
 nav {
-    background-color: #3c3c3c;
+    background-color: #232323e8;
     color: #fff;
     text-align: center;
     position: sticky;
@@ -75,13 +75,14 @@ nav {
     z-index: 1000;
     margin: 0;
     padding: 10px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
     text-decoration: none;
     color: #bfbfbf;
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 0.5em 1em;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -95,7 +96,7 @@ nav a:hover {
 
 nav a.active {
     background-color: #65656556;
-    color: #ffffff;
+    color: rgb(254, 203, 107);
     font-weight: bold;
     border-radius: 5px;
 }
@@ -113,16 +114,15 @@ section {
     flex-direction: row;
     max-width: 900px;
     margin: auto;
-    margin-top: 100px;
     padding-top: 3.5rem;
 }
 
 #about h2 {
-    color: navy;
+    color: rgb(0, 0, 0);
 }
 
 #about h3 {
-    color: navy;
+    color: rgb(0, 0, 0);
 }
 
 .imageContact {
@@ -148,15 +148,14 @@ section {
 .downloadResume button {
     background-color: white;
     color: black;
-    font-family: Open Sans;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 1em;
     padding: 10px 20px;
-    /* border: 0.5px solid #000000; */
     border-radius: 100px;
+    border: 0px solid white;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.223);
+    box-shadow: 2px 2px 9px 0.5px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
@@ -201,7 +200,7 @@ button:hover {
 }
 
 #portfolio h2 {
-    color: rgb(208, 156, 58);
+    color: rgba(235, 182, 83, 0.969);
     text-align: center;
     font-weight: 900;
     padding-top: 3.5rem;
@@ -211,6 +210,40 @@ button:hover {
 .intro {
     color: white;
     text-align: center;
+    font-size: 1em;
+    font-weight: 100;
+    margin: auto;
+    max-width: 600px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+.filter-buttons button {
+    margin: 0.5rem;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #00000000;
+    border: 0.5px solid white;
+    box-shadow: 0.8px 0.8px 0.5px 1px white;
+    color: white;
+    font-size: 0.8em;
+}
+
+.filter-buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+.filter-buttons button.active {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 .gallery-container {
@@ -220,11 +253,15 @@ button:hover {
     max-width: 90%;
     box-sizing: border-box;
     margin-inline: auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .item {
-    display: inline-block
+    background-color: #00000033;
+    padding: 0.4rem;
+    border-radius: 5px;
+    max-width: 600px;
+    /* flex: 1 0 calc(33.33% - 10px); */
 }
 
 .link {
@@ -234,18 +271,25 @@ button:hover {
 .link img {
     width: 100%;
     height: 100%;
+    max-height: 300px;
     object-fit: cover;
+    object-position: left;
     display: block;
+    border-radius: 5px;
+    opacity: 85%;
 }
 
 .name {
     position: relative;
-    transform: translate(0%, -100%); 
-    background-color: #ffffffaa; 
-    color: #000000; 
-    padding: 40px 20px; 
+    margin-top: 0.4rem;
+    background-color: #00000034; 
+    color: #ffffffca; 
+    border-radius: 5px;
+    padding: 25px 20px; 
     font-size: 20px; 
     text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 /* Resume */
@@ -255,7 +299,7 @@ button:hover {
     flex-direction: row;
     align-items: flex-start;
     margin-inline: auto;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     padding-top: 6rem;
     max-width: 1000px;
     column-gap: 6rem;
@@ -377,16 +421,17 @@ footer {
     width: auto;
     margin-top: 5rem;
   }
-  
+
   /* Scroll to Top Button Styles */
   #scrollToTopBtn {
     position: relative;
-    bottom: 10px;
-    right: 10px;
+    /* bottom: 10px; */
+    /* right: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-top: 5rem;
   }
   
   #fa-solid {
@@ -405,14 +450,29 @@ footer {
     justify-content: center;
   }
   
+.external {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin: auto 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.external:hover {
+    background-color: #fff;
+    color: black;
+}
+
   .quote {
     color: #ffffff;
     font-weight: 300;
     text-align: left;
     line-height: 1.5em;
     margin: auto;
-    margin-top: 40px;
-    max-width: 700px;
+    max-width: 500px;
   }
 
 .author {
@@ -421,6 +481,7 @@ footer {
     text-align: center;
     line-height: 1.5em;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
     max-width: 700px;
 }

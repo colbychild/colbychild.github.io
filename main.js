@@ -78,3 +78,22 @@ function downloadResume() {
     // Remove the link from the document
     document.body.removeChild(link);
 }
+
+function filterItems(category, button) {
+    const items = document.querySelectorAll('.item');
+    const buttons = document.querySelectorAll('.filter-buttons button');
+
+    items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+}

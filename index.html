@@ -35,7 +35,7 @@
 
             <div class="imageContact">
                 <div class="portrait">
-                    <img src="images/portrait.jpg" alt=""></>
+                    <img src="images/misc/portrait.jpg" alt=""></>
                 </div>
                 
                 <div class="contact">
@@ -74,44 +74,65 @@
         
         <section id="portfolio">
             <h2>Project Portfolio</h2>
-            <h3 class="intro">Intro to projects in portfolio</h3>
+            <h3 class="intro">This (mostly) chronological collection includes work from my current internship, college coursework/research, as well as a few fun ones.</h3>
+            <div class="filter-buttons">
+                <button onclick="filterItems('all', this)" class="active">All</button>
+                <button onclick="filterItems('Cartography', this)">Cartography</button>
+                <button onclick="filterItems('Apps', this)">Esri Apps</button>
+                <button onclick="filterItems('Analysis', this)">Analysis</button>
+                <button onclick="filterItems('Research', this)">Research</button>
+                <!-- Add more buttons for other categories as needed -->
+            </div>
             <div class="gallery-container">
-                <div class="item">
+                <div class="item Cartography">
                     <a class="link" href="portfolio/emery-maps.html">
                         <img src="images/emery_map/emery-3.jpg"img>
-                        <div class="name">Emery Maps</div>
+                        <div class="name">Emery Deposition Maps (Arch E)</div>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item Apps">
+                    <a class="link" href="portfolio/emery-maps.html">
+                        <img src="images/report_template/cover.jpg"img>
+                        <div class="name">Survey123 Driving Report Template</div>
+                    </a>
+                </div>
+                <div class="item Apps">
+                    <a class="link" href="portfolio/emery-maps.html">
+                        <img src="images/fieldwork_training/top.png"img>
+                        <div class="name">Fieldwork Training Document</div>
+                    </a>
+                </div>
+                <div class="item Apps">
+                    <a class="link" href="portfolio/emery-maps.html">
+                        <img src="images/asset_inventory/overview.png"img>
+                        <div class="name">Asset Inventory System</div>
+                    </a>
+                </div>
+                <div class="item Cartography Analysis Research">
+                    <a class="link" href="portfolio/air_pollution.html">
+                        <img src="images/air_pollution_research/AirPollutionResearch-3.jpg"img>
+                        <div class="name">Air Pollution Research</div>
+                    </a>
+                </div>
+                <div class="item Analysis Cartography">
+                    <a class="link" href="portfolio/emery-maps.html">
+                        <img src="images/red_butte/Picture3.jpg"img>
+                        <div class="name">Red Butte Creek Analysis</div>
+                    </a>
+                </div>
+                <div class="item Analysis Cartography">
                     <a class="link" href="portfolio/emery-maps.html">
                         <img src="images/advanced_methods/Hosp-Serv.jpg"img>
-                        <div class="name">Emery Maps</div>
+                        <div class="name">Advanced Methods in GIS</div>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item Cartography Analysis">
                     <a class="link" href="portfolio/emery-maps.html">
-                        <img src="images/air_pollution_research/AirPollutionResearch-3.jpg"img>
-                        <div class="name">Emery Maps</div>
+                        <img src="images/intro_gis/1.jpg"img>
+                        <div class="name">Intro to GIS & Cartography</div>
                     </a>
                 </div>
-                <div class="item">
-                    <a class="link" href="portfolio/emery-maps.html">
-                        <img src="images/emery_map/emery-3.jpg"img>
-                        <div class="name">Emery Maps</div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a class="link" href="portfolio/emery-maps.html">
-                        <img src="images/emery_map/emery-3.jpg"img>
-                        <div class="name">Emery Maps</div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a class="link" href="portfolio/emery-maps.html">
-                        <img src="images/emery_map/emery-3.jpg"img>
-                        <div class="name">Emery Maps</div>
-                    </a>
-                </div>
+            </div>
         </section>
 
     <!-- resume
@@ -431,27 +452,30 @@
     </main>
 
     <footer>
+        <p class="quote">“To those devoid of imagination a blank place on the map is a useless waste; to others, the most valuable part.”
+        </p>
+        <p class="author">– Aldo Leopold</p>
+        <a class="external" href="https://colbychild.myportfolio.com/home-1" target="_blank">Photography</a>
+        <a class="external" href="https://colbychild.myportfolio.com/writing-1" target="_blank">Wasatch Magazine</a>
+        <a class="external" href="https://colbychild.myportfolio.com/writing" target="_blank">Writing</a>
         <div id="scrollToTopBtn" onclick="scrollToTop()">
-          <div class="button-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="white"
-              class="bi bi-arrow-up-circle"
-              viewBox="0 0 16 16"
-            >
-              <path
+            <div class="button-container">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="white"
+                class="bi bi-arrow-up-circle"
+                viewBox="0 0 16 16"
+                >
+                <path
                 fill-rule="evenodd"
                 d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
-              />
+                />
             </svg>
             <div id="scrollToTopBtn-text">Back to Top</div>
-          </div>
         </div>
-        <p class="quote">"I was so busy making maps I let them argue. I figured I’d show them a picture of where the rift valley was and where it pulled apart. There’s truth in the old cliché that a picture is worth a thousand words and that seeing is believing."
-        </p>
-        <p class="author">– Marie Tharp</p>
+    </div>
     </footer>
       
     <script src="main.js"></script>

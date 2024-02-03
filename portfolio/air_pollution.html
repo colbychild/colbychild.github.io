@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="air_pollution.css">
+    
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@300;400;500;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/d0a6ae3034.js" crossorigin="anonymous"></script>
+    <title>Colby Child - GIS Professional</title>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="/index.html#portfolio">Back to Portfolio</a>
+        <a class="link" href="portfolio/emery-maps.html">
+            <div class="name">Next - Emery Deposition Maps (Arch E)</div>
+        </a>
+    </nav>
+
+    <main>
+        
+        <section>
+            <h2>Air Pollution Research</h2>
+            <p>
+                Maps created as part of research done over the period of a year working with census and EPA data on the US-Mexico border. Legend info is excluded in the last three maps because it was provided in the captions of the poster and manuscript.   
+            </p>
+        </section>
+
+        <section class="gallery-container">
+            <!-- Replace the image paths with your actual image paths -->
+            <div class="gallery-item" onclick="toggleFullscreen(this)">
+                <img src="/images/air_pollution_research/AirPollutionResearch-1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item" onclick="toggleFullscreen(this)">
+                <img src="/images/air_pollution_research/AirPollutionResearch-2.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item" onclick="toggleFullscreen(this)">
+                <img src="/images/air_pollution_research/AirPollutionResearch-3.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item" onclick="toggleFullscreen(this)">
+                <img src="/images/air_pollution_research/AirPollutionResearch-4.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item" onclick="toggleFullscreen(this)">
+                <img src="/images/air_pollution_research/AirPollutionResearch-5.jpg" alt="Image 1">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="scrollToTopBtn" onclick="scrollToTop()">
+          <div class="button-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              class="bi bi-arrow-up-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+              />
+            </svg>
+            <div id="scrollToTopBtn-text">Back to Top</div>
+          </div>
+        </div>
+        <p id="quote">"I was so busy making maps I let them argue. I figured I’d show them a picture of where the rift valley was and where it pulled apart. There’s truth in the old cliché that a picture is worth a thousand words and that seeing is believing."<br><br>– Marie Tharp
+        </p>
+    </footer>
+      
+    <script src="portfolio.js"></script>
+</body>
+</html>
