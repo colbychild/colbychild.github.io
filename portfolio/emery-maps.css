@@ -92,6 +92,15 @@ section {
     max-width: 90%;
 }
 
+.individualImage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 2rem;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 70%;
+}
+
 .gallery-item {
     position: relative;
     overflow: hidden;
