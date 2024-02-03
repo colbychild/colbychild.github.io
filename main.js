@@ -60,7 +60,7 @@ function scrollToTop() {
 
 function downloadResume() {
     // Specify the path to your PDF document
-    var pdfPath = '/Resume_Colby-Child'; // Update this with the actual path
+    var pdfPath = 'Resume_Colby-Child'; // Update this with the actual path
 
     // Create an anchor element
     var link = document.createElement('a');
