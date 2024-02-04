@@ -58,38 +58,55 @@ function scrollToTop() {
     requestAnimationFrame(scrollStep);
 }
 
+
+// Fullscreen upon clicking image in gallery. Esc key breaks website.
 function toggleFullscreen(element) {
   if (!document.fullscreenElement) {
     element.parentElement.classList.add('fullscreen');
     element.requestFullscreen().catch(err => {
       console.error(`Error attempting to enable full-screen mode: ${err.message}`);
     });
+
+    // Add event listener for "Esc" key
+    document.addEventListener('keydown', exitFullscreenOnEsc);
   } else {
     document.exitFullscreen();
     element.parentElement.classList.remove('fullscreen');
+    // Remove the event listener when exiting fullscreen
+    document.removeEventListener('keydown', exitFullscreenOnEsc);
   }
 }
 
-function toggleEnlarge(container) {
-  container.classList.toggle('enlarged');
+function exitFullscreenOnEsc(event) {
+  if (event.key === 'Escape') {
+    document.exitFullscreen();
+    // You may need to remove 'fullscreen' class manually if needed
+  }
 }
-  
-  // Listen for fullscreen change event
-  document.addEventListener('fullscreenchange', () => {
-    const fullscreenElement = document.fullscreenElement;
-    if (fullscreenElement) {
-      // Apply styles to the element in fullscreen mode
-      fullscreenElement.style.width = 'auto';
-      fullscreenElement.style.height = 'auto';
-    } else {
-      // Reset styles when exiting fullscreen
-      element.style.width = ''; // Set to default or remove this line if not needed
-      element.style.height = ''; // Set to default or remove this line if not needed
-      element.style.objectFit = ''; // Set to default or remove this line if not needed
-    }
+
+// Enlarge image with lightbox and close it with X button or ESC key
+const lightbox = document.getElementById('lightbox');
+const lightboxContent = document.getElementById('lightbox-content');
+const triggers = document.querySelectorAll('.lightbox-trigger');
+
+function openLightbox(imageSrc) {
+  lightboxContent.src = imageSrc;
+  lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+  lightbox.style.display = 'none';
+}
+
+triggers.forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    openLightbox(trigger.src);
   });
-  
-  // Example usage:
-  // const myElement = document.getElementById('myImage'); // replace 'myImage' with your actual element ID
-  // myElement.addEventListener('click', () => toggleFullscreen(myElement));
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeLightbox();
+  }
+});
   

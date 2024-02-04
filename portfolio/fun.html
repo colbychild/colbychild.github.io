@@ -31,19 +31,25 @@
 
         <section class="gallery-container">
             <!-- Replace the image paths with your actual image paths -->
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/fun/bonneville_1.jpg" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/fun/bonneville_1.jpg" class="lightbox-trigger">
             </div>
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/fun/bonneville_2.jpg" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/fun/bonneville_2.jpg" class="lightbox-trigger">
             </div>
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/fun/highline.jpg" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/fun/highline.jpg" class="lightbox-trigger">
             </div>
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/fun/30-day_challenge/day1_uintas.jpg" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/fun/30-day_challenge/day1_uintas.jpg" class="lightbox-trigger">
             </div>
         </section>
+
+        <div class="lightbox" id="lightbox">
+            <span class="close-x" onclick="closeLightbox()">&times;</span>
+            <span class="close-area" onclick="closeLightbox()">&times;</span>
+            <img src="" alt="Enlarged Image" class="lightbox-content" id="lightbox-content">
+        </div>
 
     </main>
 

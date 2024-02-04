@@ -51,7 +51,7 @@ nav {
     position: -webkit-sticky;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
     margin: auto;
     padding: 10px 0;
     justify-content: space-between;
@@ -61,7 +61,7 @@ nav a {
     text-decoration: none;
     color: #bfbfbf;
     font-weight: 100;
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 0.5em 1em;
     margin-left: 0.8rem;
     display: inline-block;
@@ -93,8 +93,9 @@ section {
     gap: 2rem;
     padding: 20px;
     box-sizing: border-box;
-    max-width: 95%;
+    max-width: 80%;
     margin-top: 2rem;
+    margin: auto;
 }
 
 .gallery-item {
@@ -120,28 +121,46 @@ section {
     position: relative;
 }
 
-.fullscreen {
+.lightbox {
+    flex-direction: column;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+  }
+  
+  .lightbox-content {
+    display: block;
+    margin: auto;
+    max-width: 95%;
+    max-height: 95%;
+  }
+  
+  .close-x {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
   }
 
-.fullscreen img {
-    object-fit: contain;
-    max-width: 100%;
-}
-
-.manuscript {
-    margin: auto;
-    max-width: 600px;
-}
+  .close-area {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
 
 /* Footer Styles */
 footer {
@@ -152,6 +171,7 @@ footer {
     position: relative;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 0;
   }
   
   /* Scroll to Top Button Styles */

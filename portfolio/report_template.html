@@ -32,23 +32,29 @@
 
         <section class="gallery-container">
             <!-- Replace the image paths with your actual image paths -->
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/report_template/summary_template2.png" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/report_template/summary_template2.png" class="lightbox-trigger">
             </div>
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/report_template/summary_example.png" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/report_template/summary_example.png" class="lightbox-trigger">
             </div>
         </section>
         <p class="numbers">1. Report Summary Page</p>
         <section class="gallery-container">
             <!-- Replace the image paths with your actual image paths -->
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/report_template/record_template.png" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/report_template/record_template.png" class="lightbox-trigger">
             </div>
-            <div class="gallery-item" onclick="toggleFullscreen(this)">
-                <img src="/images/report_template/record_example.png" alt="Image 1">
+            <div class="gallery-item">
+                <img src="/images/report_template/record_example.png" class="lightbox-trigger">
             </div>
         </section>
+
+        <div class="lightbox" id="lightbox">
+            <span class="close-x" onclick="closeLightbox()">&times;</span>
+            <span class="close-area" onclick="closeLightbox()">&times;</span>
+            <img src="" alt="Enlarged Image" class="lightbox-content" id="lightbox-content">
+        </div>
 
     </main>
 
