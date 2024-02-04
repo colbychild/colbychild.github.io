@@ -13,17 +13,19 @@ header {
     background-position: center center;
     color: #000;
     text-align: center;
-    height: 13em;
+    height: 11em;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     padding: 20px 0 150px 0;
 }
 
 header h1 {
     color: rgba(0, 0, 0, 0.75);
+    font-size: 3em;
 }
 
 header h3 {
     color: rgba(0, 0, 0, 0.898);
+    font-size: 2em;
 }
 
 .header-container {
@@ -90,7 +92,7 @@ nav a {
     text-decoration: none;
     color: #bfbfbf;
     font-weight: 100;
-    font-size: 1.1em;
+    font-size: 0.7em;
     padding: 0.5em 1em;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -270,7 +272,6 @@ section {
     padding: 0.5rem;
     border-radius: 5px;
     max-width: 600px;
-    /* flex: 1 0 calc(33.33% - 10px); */
 }
 
 .link {
@@ -402,24 +403,6 @@ section {
     gap: 3rem;
 }
 
-@media (max-width: 800px) {
-    .resume {
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
-    }
-
-    .list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-        max-width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-}
-
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -518,4 +501,102 @@ justify-content: center;
     margin-bottom: 2rem;
     max-width: 700px;
     padding: 0;
+}
+
+@media (max-width: 800px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        max-width: 95%;
+    }
+
+    .item {
+        background-color: #00000033;
+        padding: 0.5rem;
+        border-radius: 5px;
+        max-width: 600px;
+    }
+    
+    .link {
+        text-decoration: none;
+    }
+    
+    .link img {
+        width: 100%;
+        height: 100%;
+        max-height: 150px;
+        object-fit: cover;
+        object-position: left;
+        display: block;
+        border-radius: 5px;
+        opacity: 95%;
+    }
+    
+    .name {
+        position: relative;
+        margin-top: 0.5rem;
+        background-color: #00000051; 
+        color: #ffffffca; 
+        border-radius: 5px;
+        padding: 25px 20px; 
+        font-size: 20px; 
+        text-align: center;
+        font-weight: 600;
+        font-size: 0.6em;
+    }
+
+    .resume {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        padding: 0;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        box-sizing: border-box;
+    }
+    
+    .section-header-allcaps {
+        text-transform:uppercase;
+        font-size: 1.5em;
+        padding: 0 0 0.5rem 0;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    
+    .h3 {
+        font-size: 1.9em;
+        padding-bottom: 0.5rem;
+        margin-top: 0px;
+        margin-bottom: 0.8rem;
+        border-bottom: 0.5px solid black;
+    }
+    
+    .list li {
+        padding: 0;
+    }
+    
+    .quote {
+        color: #ffffff;
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.5em;
+        margin-bottom: 0;
+        padding: 2rem;
+    }
+    
+    .author {
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.5em;
+        margin: auto;
+        margin-bottom: 2rem;
+        max-width: 700px;
+        padding: 0;
+    }
 }
