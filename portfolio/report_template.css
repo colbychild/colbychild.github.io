@@ -41,7 +41,6 @@ p {
     margin: auto;
     padding-top: 1rem;
     line-height: 1.5em;
-    border-top: 1px solid black;
   }  
 
 /* Navigation Styles */
@@ -174,47 +173,100 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-    position: relative;
-    width: 100%;
-    margin-top: 100px;
-  }
-  
-  /* Scroll to Top Button Styles */
-  #scrollToTopBtn {
-    position: relative;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  #fa-solid {
-    background-color: #4285f4;
-    color: #fff;
-  }
-  
-  #scrollToTopBtn-text {
-    color: #ffffff;
-    margin-left: 15px;
-  }
-  
-  .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  footer p {
-    color: #ffffff;
-    font-weight: 300;
-    position: center;
-    text-align: center;
-    line-height: 1.5em;
-    margin: 2% 35% 0% 35%;
-  }
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  width: auto;
+  margin-top: 5rem;
+}
+
+/* Scroll to Top Button Styles */
+#scrollToTopBtn {
+position: relative;
+/* bottom: 10px; */
+/* right: 10px; */
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin-top: 2rem;
+}
+
+#fa-solid {
+background-color: #4285f4;
+color: #fff;
+}
+
+#scrollToTopBtn-text {
+color: #ffffff;
+margin-left: 15px;
+}
+
+.button-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.external-sites {
+  display: flex;
+  flex-flow: row wrap;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.external-buttons {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+.external-buttons:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.linkedin {
+  background-color: white;
+  padding: 1rem;
+  margin: auto 0.5rem;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+.linkedin img {
+  width: 90px;
+}
+
+.linkedin:hover {
+  background-color: rgba(0, 0, 0, 0.885);
+}
+
+.quote {
+  color: #ffffff;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5em;
+  margin: auto;
+  padding: 0;
+  max-width: 625px;
+}
+
+.author {
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5em;
+  margin: auto;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  padding: 0;
+}

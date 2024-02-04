@@ -58,32 +58,6 @@ function scrollToTop() {
     requestAnimationFrame(scrollStep);
 }
 
-
-// Fullscreen upon clicking image in gallery. Esc key breaks website.
-function toggleFullscreen(element) {
-  if (!document.fullscreenElement) {
-    element.parentElement.classList.add('fullscreen');
-    element.requestFullscreen().catch(err => {
-      console.error(`Error attempting to enable full-screen mode: ${err.message}`);
-    });
-
-    // Add event listener for "Esc" key
-    document.addEventListener('keydown', exitFullscreenOnEsc);
-  } else {
-    document.exitFullscreen();
-    element.parentElement.classList.remove('fullscreen');
-    // Remove the event listener when exiting fullscreen
-    document.removeEventListener('keydown', exitFullscreenOnEsc);
-  }
-}
-
-function exitFullscreenOnEsc(event) {
-  if (event.key === 'Escape') {
-    document.exitFullscreen();
-    // You may need to remove 'fullscreen' class manually if needed
-  }
-}
-
 // Enlarge image with lightbox and close it with X button or ESC key
 const lightbox = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
