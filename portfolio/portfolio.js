@@ -58,29 +58,46 @@ function scrollToTop() {
     requestAnimationFrame(scrollStep);
 }
 
-// Enlarge image with lightbox and close it with X button or ESC key
 const lightbox = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
 const triggers = document.querySelectorAll('.lightbox-trigger');
 
+let currentIndex = 0;
+
 function openLightbox(imageSrc) {
-  lightboxContent.src = imageSrc;
-  lightbox.style.display = 'flex';
+    lightboxContent.src = imageSrc;
+    lightbox.style.display = 'flex';
 }
 
 function closeLightbox() {
-  lightbox.style.display = 'none';
+    lightbox.style.display = 'none';
+}
+
+function navigateGallery(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = triggers.length - 1;
+    } else if (currentIndex >= triggers.length) {
+        currentIndex = 0;
+    }
+
+    openLightbox(triggers[currentIndex].src);
 }
 
 triggers.forEach(trigger => {
-  trigger.addEventListener('click', () => {
-    openLightbox(trigger.src);
-  });
+    trigger.addEventListener('click', () => {
+        currentIndex = Array.from(triggers).indexOf(trigger);
+        openLightbox(trigger.src);
+    });
 });
 
 document.addEventListener('keydown', function (event) {
-  if (event.key === 'Escape') {
-    closeLightbox();
-  }
+    if (event.key === 'Escape') {
+        closeLightbox();
+    } else if (event.key === 'ArrowLeft') {
+        navigateGallery(-1);
+    } else if (event.key === 'ArrowRight') {
+        navigateGallery(1);
+    }
 });
-  

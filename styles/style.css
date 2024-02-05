@@ -455,7 +455,7 @@ justify-content: center;
 .external-buttons {
     text-decoration: none;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border: 2px solid white;
     border-radius: 100px;
 }
@@ -467,7 +467,7 @@ justify-content: center;
 
 .linkedin {
     background-color: white;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: auto 0.5rem;
     border: 2px solid white;
     border-radius: 100px;

@@ -42,7 +42,7 @@ function easeInOutQuad(t, b, c, d) {
 // Smooth Scroll to Top function with easing
 function scrollToTop() {
     const startTime = performance.now();
-    const duration = 2500; // milliseconds
+    const duration = 2000; // milliseconds
 
     function scrollStep() {
         const currentTime = performance.now();
